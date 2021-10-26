@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  configApp: {
+    usuario: "Admin",
+    password: "2019.-",
+    urlservidor: "http://localhost:80/back_testcss/public/api/",
+    //urlMarker: "https://fiiss.com/pacman/web/assets/",
+    // urlservidor: 'http://domidomiapp.com/backend_domidomi_cienaga/public/api/',
+    urlMarker: "../../../../assets/",
+  },
 };
 
 /*

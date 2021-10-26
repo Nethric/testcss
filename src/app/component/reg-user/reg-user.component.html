@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form method="post" #regForm="ngForm" (ngSubmit)="onSubmitCrear(regForm)">
+                    <br>
+                    <h4>Nombre</h4>
+                    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="nomsel" required><br><br>
+                    <h4>Rol</h4>
+                    <input type="text" name="rol" #rol="ngModel" [(ngModel)]="rolsel" required><br><br>
+                    <h4>Usuario</h4>
+                    <input type="text" name="user" #user="ngModel" [(ngModel)]="usersel" required><br><br>
+                    <h4>Contraseña</h4>
+                    <input type="password" name="pass" #pass="ngModel" [(ngModel)]="passsel" required><br><br>
+                    <button type="submit" [disabled]="regForm.invalid" class="btn btn-info">Iniciar sesion</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
